@@ -1,0 +1,16 @@
+[project]
+name = "yt-downloader"
+version = "0.1.0"
+description = "Fast YouTube video downloader with queue support"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=14.3.2",
+    "yt-dlp>=2026.2.4",
+]
+
+[project.scripts]
+yt-downloader = "yt_downloader.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
